@@ -2,18 +2,13 @@
 
 <html>
 	<head>
-		<title>Knucklehead Gaming</title>
+		<title>Particle Photon</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
 		<div id="page-wrapper">
-
-
 <!-- Header -->
 <header id="header">
     <h1 id="logo"><a href="index.html">Go Back to the Fun Stuff</a></h1>
@@ -44,48 +39,46 @@
     </nav>
 </header>
 
-
-
-
 <!-- Main -->
                 <div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
 							<h2>Photon Remote Link</h2>
-							<p>This will allow you to make remote commands to my photon somewhere else...Enjoy</p>
-							<div><a href="https://www.particle.io"><img src="images/PhotonBoard.png" alt="" align="middle" height="200" width="100" /></a></div>
+							<br>This will allow you to make remote commands to my photon somewhere else...Enjoy</br>
+							<div><a href="https://www.particle.io"><img src="images/PhotonBoard.png" align="middle" height="300" width="150" /></a></div>
 						</header>
 
 						<!-- Content -->
 							<section id="led-control">
-								<h3 style="text-align: center;">Go Ahead Try Changing Something</h3>
-								<form>									 	<fieldset>
-											<input type="radio" id="radioButton1" name="led1">
-											<label for="radioButton1"> LED1 ON</label>
+								<h3 style="text-align: center;">Try Toggling the LEDs!</h3>
+								<div align="middle" class="u 12u$(medium)">
+									<form action="https://api.particle.io/v1/devices/24001f001247343438323536/led?access_token=6d69b76207542b0a0596677af4a4756574e0ed5c" method="post">	
+										<fieldset>
+										<input type="radio" id="radioButton1" name="led" value="on1">
+										<label for="radioButton1">LED1 ON</label>
+
+										<input type="radio" id="radioButton2" name="led" value="off1">
+										<label for="radioButton2">LED1 OFF</label>
+										</fieldset>
 										
-										 	<input type="radio" id="radioButton2" name="led1">
-											<label for="radioButton2">LED1 OFF</label>
+										<fieldset>
+										<input type="radio" id="radioButton3" name="led" value="on2">
+										<label for="radioButton3">LED2 ON</label>
+
+										<input type="radio" id="radioButton4" name="led" value="off2">
+										<label for="radioButton4">LED2 OFF</label>
 										</fieldset>
 										<fieldset>
-											<input type="radio" id="radioButton3" name="led2">
-											<label for="radioButton3"> LED2 ON</label>
-										
-										 	<input type="radio" id="radioButton4" name="led2">
-											<label for="radioButton4">LED2 OFF</label>
+										<input type="radio" id="radioButton5" name="led" value="on3">
+										<label for="radioButton5">LED3 ON</label>
+
+										<input type="radio" id="radioButton6" name="led" value="off3">
+										<label for="radioButton6">LED3 OFF</label>
 										</fieldset>
-										<fieldset>
-											<input type="radio" id="radioButton5" name="led3">
-											<label for="radioButton5"> LED3 ON</label>
-										
-										 	<input type="radio" id="radioButton6" name="led3">
-											<label for="radioButton6">LED3 OFF</label>
-										</fieldset>	
-										<div class="actions small">
-											<p>
-												<a href="#" style="text-align: center;" class="button special small">Activate</a>
-											</p>	
-										</div>
-								</form>	
+										<a style="text-align:center;"><input class="button special small" type="submit" value="Activate"></a>
+													
+									</form>	
+								</div>
 							</section>
 					</div>
 				</div>
