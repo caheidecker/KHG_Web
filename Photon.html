@@ -50,33 +50,13 @@
 
 						<!-- Content -->
 							<section id="led-control">
-								<h3 style="text-align: center;">Try Toggling the LEDs!</h3>
+								<h3 style="text-align: center;">Change RGB Brightness</h3>
 								<div align="middle" class="u 12u$(medium)">
-									<form action="https://api.particle.io/v1/devices/24001f001247343438323536/led?access_token=6d69b76207542b0a0596677af4a4756574e0ed5c" method="post">	
-										<fieldset>
-										<input type="radio" id="radioButton1" name="led" value="on1">
-										<label for="radioButton1">LED1 ON</label>
-
-										<input type="radio" id="radioButton2" name="led" value="off1">
-										<label for="radioButton2">LED1 OFF</label>
-										</fieldset>
-										
-										<fieldset>
-										<input type="radio" id="radioButton3" name="led" value="on2">
-										<label for="radioButton3">LED2 ON</label>
-
-										<input type="radio" id="radioButton4" name="led" value="off2">
-										<label for="radioButton4">LED2 OFF</label>
-										</fieldset>
-										<fieldset>
-										<input type="radio" id="radioButton5" name="led" value="on3">
-										<label for="radioButton5">LED3 ON</label>
-
-										<input type="radio" id="radioButton6" name="led" value="off3">
-										<label for="radioButton6">LED3 OFF</label>
-										</fieldset>
-										<a style="text-align:center;"><input class="button special small" type="submit" value="Activate"></a>
-													
+									<form action="https://api.particle.io/v1/devices/24001f001247343438323536/values?access_token=6d69b76207542b0a0596677af4a4756574e0ed5c" method="post">		
+										<label for="radioButton1">Name, Red(0-4095), Green(0-255), Blue(0-4095)</label>
+										<input type="text" id="textbox" name="values" placeholder="Name,RedValue,GreenValue,BlueValue" value="">				
+										<br></br>
+										<a style="text-align:center;"><input class="button special small" type="submit" value="Activate"></a>							
 									</form>	
 								</div>
 							</section>
